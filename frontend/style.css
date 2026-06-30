@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 800px;
+    height: 700px;
+    background: #151922;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.header {
+    padding: 15px;
+    background: #1c2230;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Chat bubbles */
+.message {
+    max-width: 75%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+/* User message */
+.user {
+    align-self: flex-end;
+    background: #4f7cff;
+    color: white;
+    border-bottom-right-radius: 3px;
+}
+
+/* Gemini message */
+.bot {
+    align-self: flex-start;
+    background: #2a2f3a;
+    color: #e6e6e6;
+    border-bottom-left-radius: 3px;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    background: #1c2230;
+    gap: 10px;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #0f1115;
+    color: white;
+    outline: none;
+    height: 45px;
+    font-size: 14px;
+}
+
+.send-btn {
+    width: 45px;
+    border: none;
+    border-radius: 10px;
+    background: #4f7cff;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.send-btn:hover {
+    background: #3c66ff;
+}
