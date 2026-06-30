@@ -52,9 +52,11 @@ cp .env.example .env       # macOS/Linux
 copy .env.example .env     # Windows
 ```
 
+```text
 Edit `.env`:
 GEMINI_API_KEY=your_gemini_api_key_here
 MCP_PROTOTYPES_DIR=/absolute/path/to/your/local/mcp-prototypes
+```
 
 `MCP_PROTOTYPES_DIR` must be an absolute path to wherever you cloned `mcp-prototypes` in step 1. On Windows, use either forward slashes or escaped backslashes, e.g. `C:/Users/you/mcp-prototypes`.
 
@@ -71,6 +73,7 @@ The server starts at `http://127.0.0.1:8000` and connects to all four MCP server
 Open `frontend/index.html` directly in a browser (or serve it with any static file server). It talks to the backend at `http://127.0.0.1:8000/chat`.
 
 ## Project Structure
+```text
 ai-chat-platform/
 ├── backend/
 │   ├── venv/   
@@ -84,6 +87,7 @@ ai-chat-platform/
     ├── style.css
     ├── index.html
     └── script.js
+```
 
 ## Notes
 
