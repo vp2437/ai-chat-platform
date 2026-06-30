@@ -52,8 +52,8 @@ cp .env.example .env       # macOS/Linux
 copy .env.example .env     # Windows
 ```
 
-```text
 Edit `.env`:
+```text
 GEMINI_API_KEY=your_gemini_api_key_here
 MCP_PROTOTYPES_DIR=/absolute/path/to/your/local/mcp-prototypes
 ```
